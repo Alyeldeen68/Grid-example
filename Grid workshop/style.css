@@ -1,0 +1,37 @@
+.parent {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: minmax(150px, auto);
+  grid-gap: 20px;
+  grid-template-areas:
+    "Header Header Header"
+    "Side1 Main Side2"
+    "Footer Footer Footer";
+}
+
+.child1 {
+  grid-area: Header;
+  height: 150px;
+  background-color: antiquewhite;
+}
+
+.child2 {
+  grid-area: Side1;
+  height: 60vh;
+  background-color: aquamarine;
+}
+.child3 {
+  grid-area: Main;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child5 {
+  grid-area: Side2;
+  background-color: blueviolet;
+}
+.child4 {
+  grid-area: Footer;
+  background-color: blue;
+}
